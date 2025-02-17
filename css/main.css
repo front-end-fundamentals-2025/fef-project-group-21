@@ -1,33 +1,36 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
-header{
-    background-color: greenyellow;
-    margin: 0;
-    padding: 0.5rem;
-    font-family: "Nunito", sans-serif;
+header {
+  background-color: greenyellow;
+  margin: 0;
+  padding: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  border-bottom: 0.2rem solid red;
 }
+
 ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
-.header-item{
-    margin:0 1rem;
+.header-item {
+  margin: 0 1rem;
 }
-#logo{
-    margin-right: auto;
-    margin-left: 1px;
+
+#logo {
+  margin-right: auto;
+  margin-left: 1px;
 }
 
 #cart {
-    margin-left: auto;
+  margin-left: auto;
 }
