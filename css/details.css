@@ -23,13 +23,6 @@ height:100%;
     flex-flow: wrap;
 }
 
-.quantity{
-    pointer-events: none;
-    user-select: none;
-    width:15px;
-    text-align: center;
-}
-
 .productdetails{
     min-width: 300px;
     max-width: 300px;
@@ -53,16 +46,12 @@ margin-top: 0.2rem;
     margin-top: 1.5rem;
     margin-bottom: 0;
 }
-.selectitems{
-padding-top:1rem;
-padding-bottom:1rem;
-}
 
 .addtocart{
-    padding:1rem;
+    margin-top: 3rem;
 }
-
-.shoppingcart{
-    display: inline-block;
-    transform:scale(1.5);
+.addtocart button{
+    font-size: 1rem;
+    text-align: left;
+    padding:none;
 }
