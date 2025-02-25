@@ -1,9 +1,31 @@
-figure {
+/* Hero */
+#hero-video {
   margin: 0;
 }
 
 video {
   width: 100vw;
-  height: 100vh;
+  height: 94vh;
+  object-fit: cover;
+}
+
+/* Categories */
+#category-grid {
+  display: grid;
+  grid-template-areas: "img img img img";
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.category-container {
+  margin: 0;
+  height: 20rem;
+}
+
+img {
+  grid-area: img;
+  border: 0.1rem solid var(--black);
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
