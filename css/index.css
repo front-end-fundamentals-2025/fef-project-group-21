@@ -5,7 +5,7 @@
 
 video {
   width: 100vw;
-  height: 94vh;
+  height: 85vh;
   object-fit: cover;
 }
 
@@ -15,11 +15,14 @@ video {
   grid-template-areas: "img img img img";
   gap: 1rem;
   margin: 1rem;
+  justify-content: center;
 }
 
 .category-container {
   margin: 0;
-  height: 20rem;
+  margin-bottom: 2rem;
+  height: 15rem;
+  width: 15rem;
 }
 
 img {
@@ -28,4 +31,17 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.category-heading {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.category-text {
+  position: relative;
+  bottom: 3rem;
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
 }
