@@ -4,7 +4,7 @@
 }
 
 video {
-  width: 100vw;
+  width: 100%;
   height: 85vh;
   object-fit: cover;
 }
@@ -14,8 +14,9 @@ video {
   display: grid;
   grid-template-areas: "img img img img";
   gap: 1rem;
-  margin: 1rem 1rem 4rem 1rem;
+  margin: 0 0 4rem 0;
   justify-content: center;
+  width: 100vw;
 }
 
 .category-container {
