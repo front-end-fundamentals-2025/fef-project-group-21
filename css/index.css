@@ -12,15 +12,13 @@ video {
 /* Categories */
 #category-grid {
   display: grid;
-  grid-template-areas: "img img img img";
   gap: 1rem;
   margin: 0 0 4rem 0;
   justify-content: center;
-  width: 100vw;
 }
 
 .category-container {
-  margin: 1rem 0.8rem;
+  margin: 1.8rem 0.6em;
   height: 15rem;
   width: 15rem;
 }
@@ -33,15 +31,24 @@ img {
   border-radius: 50%;
 }
 
-.category-heading {
-  font-size: 2rem;
-  text-align: center;
-  margin: 0.6rem 0;
-}
-
 .category-text {
   text-align: center;
   margin: 0;
   font-size: 1.2rem;
   color: var(--black);
+}
+
+/* Media Queries */
+@media screen and (min-width: 554px) {
+  #category-grid {
+    grid-template-areas:
+      "img img"
+      "img img";
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #category-grid {
+    grid-template-areas: "img img img img";
+  }
 }
