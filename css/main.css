@@ -2,17 +2,19 @@
 html {
   --white: white;
   --black: black;
+  --shadowGray: rgba(197, 197, 197, 0.39);
   --green: #4b987c;
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 /* Text */
 .section-heading {
+  font-family: "DM Serif Display", serif;
   font-size: 2.5rem;
   text-align: center;
   margin: 1rem 0;
@@ -27,7 +29,8 @@ a {
 /* Header */
 header {
   background-color: var(--white);
-  padding: 0.5rem;
+  padding: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--shadowGray);
 }
 
 ul {
