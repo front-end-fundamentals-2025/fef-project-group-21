@@ -17,7 +17,7 @@ body {
   font-family: "DM Serif Display", serif;
   font-size: 2.5rem;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 /* Links */
@@ -31,11 +31,11 @@ header {
   background-color: var(--white);
   padding: 0.4rem;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--shadowGray);
+  font-size: 1.1rem;
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
   list-style: none;
   padding: 0;
 }
@@ -58,10 +58,32 @@ nav ul li {
 
 /* Footer */
 footer {
+  display: flex;
   background-color: var(--black);
-  padding: 1rem;
+  padding: 2rem;
+  justify-content: space-around;
 }
 
-footer a {
+footer a,
+footer p {
   color: var(--white);
+  margin: 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0;
+  margin-left: 2rem;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+  font-size: 1.1rem;
+}
+
+.footer-subtitle {
+  margin-bottom: 0.3rem;
 }
