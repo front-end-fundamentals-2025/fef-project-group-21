@@ -70,3 +70,40 @@ button:hover {
     gap: 20px;
   }
 }
+
+.img1:hover {
+  content: url("../img/clothes/exhibit1.jpg");
+}
+.img2:hover {
+  content: url("../img/clothes/exhibit2.jpg");
+}
+.img3:hover {
+  content: url("../img/clothes/exhibit3.jpg");
+}
+.img4:hover {
+  content: url("../img/clothes/exhibit4.jpg");
+}
+.img5:hover {
+  content: url("../img/clothes/exhibit5.jpg");
+}
+.img6:hover {
+  content: url("../img/clothes/exhibit6.jpg");
+}
+.img7:hover {
+  content: url("../img/clothes/exhibit7.jpg");
+}
+.img8:hover {
+  content: url("../img/clothes/exhibit8.jpg");
+}
+.img9:hover {
+  content: url("../img/clothes/exhibit9.jpg");
+}
+.img10:hover {
+  content: url("../img/clothes/exhibit10.jpg");
+}
+.img11:hover {
+  content: url("../img/clothes/exhibit11.jpg");
+}
+.img12:hover {
+  content: url("../img/clothes/exhibit12.jpg");
+}
