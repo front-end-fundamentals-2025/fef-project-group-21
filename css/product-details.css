@@ -122,7 +122,7 @@ h2 {
 }
 /*Similar product details display */
 .img1:hover {
-  content: url("../img/clothes/detail1.jpg");
+  content: url("../img/clothes/detail9.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
@@ -168,4 +168,8 @@ h2 {
   width: 100%;
   height: 90%;
   border-radius: 20px;
+}
+
+.productdetails-img:hover {
+  content: url("../img/clothes/side1.jpg");
 }
