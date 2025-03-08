@@ -2,7 +2,7 @@
 html {
   --white: white;
   --black: black;
-  --shadowGray: rgba(197, 197, 197, 0.39);
+  --shadowGray: #6b6b6b46;
   --green: #4b987c;
 }
 

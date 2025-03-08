@@ -18,6 +18,8 @@ h1 {
   width: 100%;
   height: 80%;
   border-radius: 20px;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem var(--shadowGray),
+    0rem 0.1rem 1rem 0rem var(--shadowGray);
 }
 
 .see-more {
@@ -36,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: green;
+  background-color: var(--green);
 }
 
 /*Media Queries*/
@@ -50,6 +52,7 @@ button:hover {
     gap: 20px;
   }
 }
+
 @media screen and (max-width: 850px) {
   .products-category {
     margin: 0 auto;
@@ -60,6 +63,7 @@ button:hover {
     gap: 20px;
   }
 }
+
 @media screen and (max-width: 550px) {
   .products-category {
     margin: 0 auto;
