@@ -11,6 +11,8 @@
   height: auto;
   border-radius: 20px;
   object-fit: cover;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem var(--shadowGray),
+    0rem 0.1rem 1rem 0rem var(--shadowGray);
 }
 
 #product {
@@ -50,12 +52,8 @@
   margin-bottom: 0;
 }
 
-.addtocart button:hover {
-  background-color: green;
-  color: var(--white);
-}
-
-.addtocart button {
+/* Add to cart button */
+.add-to-cart button {
   margin-top: 1rem;
   width: 100px;
   font-size: 0.7rem;
@@ -65,6 +63,12 @@
   border: none;
   border-radius: 20px;
   color: white;
+}
+
+#add-to-cart-button:hover {
+  background-color: var(--hoverGreen);
+  color: var(--white);
+  cursor: pointer;
 }
 
 #similar-products {
@@ -81,6 +85,8 @@
   height: 90%;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem var(--shadowGray),
+    0rem 0.1rem 1rem 0rem var(--shadowGray);
 }
 
 .product-catalogs {
