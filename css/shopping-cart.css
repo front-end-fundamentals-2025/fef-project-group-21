@@ -1,0 +1,17 @@
+#cart-container {
+  border: 1px solid black;
+  text-align: center;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+h2 {
+  margin-top: 10px;
+}
+#cart-total {
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: left;
+  width: 80%;
+  margin: 10px auto;
+}
