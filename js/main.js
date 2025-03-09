@@ -38,23 +38,23 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* add to cart localStorage*/
+/* add to cart localStorage */
 document.addEventListener("DOMContentLoaded", () => {
   const addToCartButton = document.getElementById("add-to-cart-button");
 
   addToCartButton.addEventListener("click", () => {
-    /* get the infomation of product*/
+    /* get the infomation of product */
     const productName = document.querySelector(".productname").textContent;
-    /*Remove symbols and spaces and output number. */
+    /* Remove symbols and spaces and output number */
     const productPrice = parseFloat(
       document.querySelector(".price").textContent.replace("$", "").trim()
     );
     const productImg = document.querySelector(".productdetails-img").src;
 
-    /*Read the shopping cart data in localStorage */
+    /* Read the shopping cart data in localStorage */
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    /*Check if item exists*/
+    /* Check if item exists */
     let existingProduct = cart.find((item) => item.name === productName);
 
     if (existingProduct) {
@@ -68,11 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    /*Save to localStorage*/
+    /* Save to localStorage */
     localStorage.setItem("cart", JSON.stringify(cart));
 
-    /* feedback */
+    /* Feedback */
     alert("Added to cart!");
   });
 });
-

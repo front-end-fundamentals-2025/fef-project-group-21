@@ -29,6 +29,12 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 1.25rem;
+  box-shadow: 0rem 0.1rem 0.2rem 0rem var(--shadowGray),
+    0rem 0.1rem 1rem 0rem var(--shadowGray);
+}
+
+img:hover {
+  animation: grow 0.1s ease-in-out forwards;
 }
 
 .category-text {
@@ -36,6 +42,16 @@ img {
   margin: 0;
   font-size: 1.2rem;
   color: var(--black);
+}
+
+/* Animations */
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.03);
+  }
 }
 
 /* Media Queries */
