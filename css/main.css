@@ -62,7 +62,7 @@ footer {
   display: flex;
   background-color: var(--black);
   padding: 2rem;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 footer a,
@@ -71,12 +71,11 @@ footer p {
   margin: 0;
 }
 
-footer ul {
+.footer-link-list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin: 0;
-  margin-left: 2rem;
+  margin: 0 1.5rem 0 0;
 }
 
 .footer-title {
@@ -87,4 +86,23 @@ footer ul {
 
 .footer-subtitle {
   margin-bottom: 0.3rem;
+}
+
+#copyright {
+  margin: auto;
+}
+
+.social-media-btn {
+  border: none;
+  height: 2.3rem;
+  width: 2.3rem;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.8rem;
+}
+
+.social-media-img {
+  width: 100%;
+  height: 100%;
 }
