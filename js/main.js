@@ -72,3 +72,16 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
+/* trying to use the localStorage
+document.addEventListener("DOMContentLoaded",()=>{
+  const cartContainer = document.getElementById("cart-items");
+  const totalPriceElement = document.getElementById("total-price");
+
+  let cart = JSON.parse(localStorage.getItem("cart"))||[];
+
+  if (cart.length === 0 ){
+    cartContainer,innerHTML = "<p>Your cart is empty !";
+    totalPriceElement.textContent = "$0.00";
+    return;
+  }
+})*/
