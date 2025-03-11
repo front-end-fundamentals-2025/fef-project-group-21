@@ -3,11 +3,20 @@
 }
 
 #cart-container {
-  border: 1px solid black;
+
   text-align: center;
   width: 80%;
-  margin: 10px auto;
+  margin: 0 auto 1.5rem auto;
   border-radius: 20px;
+  padding-bottom: 1rem;
+}
+
+#empty-cart-text {
+  margin: 1rem 0 0.6rem 0;
+}
+
+#back-to-store-btn {
+  font-weight: bold;
 }
 
 .category-total {

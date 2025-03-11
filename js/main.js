@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* Gets the previously stored cart or an empty cart */
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
 /* add to cart localStorage */
 document.addEventListener("DOMContentLoaded", () => {
   const addToCartButton = document.getElementById("add-to-cart-button");
@@ -72,16 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("cart", JSON.stringify(cart));
   });
 });
-/* trying to use the localStorage
-document.addEventListener("DOMContentLoaded",()=>{
-  const cartContainer = document.getElementById("cart-items");
-  const totalPriceElement = document.getElementById("total-price");
 
-  let cart = JSON.parse(localStorage.getItem("cart"))||[];
+document.addEventListener("DOMContentLoaded", () => {
+  const cartContainer = document.getElementById("cart-container");
 
-  if (cart.length === 0 ){
-    cartContainer,innerHTML = "<p>Your cart is empty !";
-    totalPriceElement.textContent = "$0.00";
-    return;
+  /* If cart is empty, show this text */
+  if (cart.length < 1) {
+    cartContainer.innerHTML = `
+    <p id="empty-cart-text">Your cart is currently empty</p>
+    <a id="back-to-store-btn" href="products.html">Back to store</a>
+    `;
   }
-})*/
+});
