@@ -58,7 +58,7 @@
   background-color: var(--green);
   border: none;
   border-radius: 20px;
-  color: white;
+  color: var(--white);
 }
 
 #add-to-cart-button:hover {
@@ -136,7 +136,6 @@ h2 {
 }
 
 /*Similar product details display */
-
 .img2:hover {
   content: url("../img/clothes/detail2.jpg");
   width: 100%;
