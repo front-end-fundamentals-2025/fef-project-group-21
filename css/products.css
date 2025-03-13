@@ -23,7 +23,7 @@
 
 /*Media Queries*/
 @media screen and (max-width: 1300px) {
-  .products-category {
+  .products-gallery {
     margin: 0 auto;
     width: 80%;
     display: grid;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 850px) {
-  .products-category {
+  .products-gallery {
     margin: 0 auto;
     width: 80%;
     display: grid;
@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .products-category {
+  .products-gallery {
     margin: 0 auto;
     width: 80%;
     display: grid;
