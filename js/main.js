@@ -81,9 +81,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalPriceElement = document.getElementById("total-price");
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
   /* If cart is empty, show this text */
   if (cart.length === 0) {
-    cartContainer.innerHTML = "<p >Your cart is currently empty !</p>";
+    cartContainer.innerHTML = `
+    <p>Your cart is empty</p>
+    <a href="products.html">
+     <button id="back-to-store-btn">
+     Back to store
+     </button>
+    </a>
+    `;
     totalPriceElement.textContent = "$ 0.00";
     return;
   }
