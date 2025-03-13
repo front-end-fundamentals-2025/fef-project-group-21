@@ -94,5 +94,32 @@
   .cart-name {
     min-width: 150px;
   }
-  
+  .cart-info * {
+    display: flex;
+    margin: 15px auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .quantity-number {
+    min-width: 20px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-img {
+    margin: 10px auto;
+  }
+}
+@media screen and (max-width: 525px) {
+  .cart-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-info *{
+    margin:3px auto;
+  }
 }

@@ -97,9 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="cart-info">
     <p class="cart-name">${item.name}</p>
     <p class="cart-price">$${item.price.toFixed(2)}</p>
-    <p class="cart-quantity"><button class="decrease" data-index="${index}">-</button>
+    <div class="quantity-button"><button class="decrease" data-index="${index}">-</button>
     <span class="quantity-number">${item.quantity}</span>
-    <button class="increase" data-index="${index}">+</button></p>
+    <button class="increase" data-index="${index}">+</button></div>
     <button class="remove-item" data-index="${index}">Remove</button>
     </div>`;
     cartContainer.appendChild(productElement);
