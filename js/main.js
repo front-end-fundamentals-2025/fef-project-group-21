@@ -78,12 +78,64 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const cartContainer = document.getElementById("cart-container");
+  const totalPriceElement = document.getElementById("total-price");
 
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
   /* If cart is empty, show this text */
-  if (cart.length < 1) {
-    cartContainer.innerHTML = `
-    <p id="empty-cart-text">Your cart is currently empty</p>
-    <a id="back-to-store-btn" href="products.html">Back to store</a>
-    `;
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p >Your cart is currently empty !</p>";
+    totalPriceElement.textContent = "$ 0.00";
+    return;
   }
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    const productElement = document.createElement("div");
+    productElement.classList.add("cart-item");
+    productElement.innerHTML = `
+    <img src="${item.image}" class="cart-img">
+    <div class="cart-info">
+    <p class="cart-name">${item.name}</p>
+    <p class="cart-price">$${item.price.toFixed(2)}</p>
+    <p class="cart-quantity"><button class="decrease" data-index="${index}">-</button>
+    <span class="quantity-number">${item.quantity}</span>
+    <button class="increase" data-index="${index}">+</button></p>
+    <button class="remove-item" data-index="${index}">Remove</button>
+    </div>`;
+    cartContainer.appendChild(productElement);
+    total += item.price * item.quantity;
+  });
+  total += 20;
+  totalPriceElement.textContent = `$${total.toFixed(2)}`;
+
+  document.querySelectorAll(".increase").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      let index = e.target.getAttribute("data-index");
+      cart[index].quantity += 1;
+      localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload();
+    });
+  });
+
+  document.querySelectorAll(".decrease").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      let index = e.target.getAttribute("data-index");
+      if (cart[index].quantity > 1) {
+        cart[index].quantity -= 1;
+      } else {
+        cart.splice(index, 1);
+      }
+      localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload();
+    });
+  });
+
+  document.querySelectorAll(".remove-item").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      let index = e.target.getAttribute("data-index");
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      location.reload();
+    });
+  });
 });
