@@ -80,11 +80,16 @@
 }
 
 .remove-item {
-  background-color: var(--removeRed);
+  background-color: var(--red);
   border: 0;
   border-radius: 10px;
   min-width: 80px;
   min-height: 30px;
+}
+
+.remove-item:hover {
+  background-color: var(--hoverRed);
+  cursor: pointer;
 }
 
 /* Media Queries */

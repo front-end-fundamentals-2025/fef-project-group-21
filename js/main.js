@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
      </button>
     </a>
     `;
-    totalPriceElement.textContent = "$ 0.00";
+    totalPriceElement.textContent = "$0.00";
     return;
   }
   let total = 0;
