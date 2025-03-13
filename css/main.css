@@ -82,7 +82,7 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: start;
-  margin: 0 0.7rem;
+  margin: 0 1.5rem;
 }
 
 .footer-title {
@@ -93,6 +93,10 @@ footer p {
 
 .footer-subtitle {
   margin-bottom: 0.3rem;
+}
+
+#social-medias-btn-list {
+  margin: 0;
 }
 
 .social-media-btn {
@@ -108,4 +112,16 @@ footer p {
 .social-media-img {
   width: 100%;
   height: 100%;
+}
+
+/* Media Queries */
+/* Footer */
+@media screen and (max-width: 640px) {
+  footer {
+    flex-direction: column;
+  }
+  #copyright-text,
+  #footer-lists-container {
+    margin-bottom: 2rem;
+  }
 }
