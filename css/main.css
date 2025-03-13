@@ -34,26 +34,30 @@ header {
   background-color: var(--white);
   padding: 0.4rem;
   box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem var(--shadowGray);
-  font-size: 1.1rem;
+  font-size: 1.3rem;
+}
+
+header ul {
+  justify-content: center;
 }
 
 ul {
   display: flex;
   list-style: none;
   padding: 0;
-}
-
-#logo {
-  font-weight: bold;
-  margin-right: auto;
-}
-
-ul {
   align-items: center;
 }
 
+#logo {
+  margin-top: 0.1rem;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  display: block;
+}
+
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 0.8rem;
 }
 
 .material-symbols-outlined {
@@ -89,7 +93,7 @@ footer p {
 
 .footer-title {
   font-weight: bold;
-  margin-bottom: 0.1rem;
+  margin: 0.3rem 0 0.3rem 0;
   font-size: 1.1rem;
 }
 
@@ -108,7 +112,7 @@ footer p {
   align-items: center;
   border-radius: 50%;
   cursor: pointer;
-  margin: 0.3rem 0.3rem;
+  margin-right: 0.5rem;
 }
 
 .social-media-img {

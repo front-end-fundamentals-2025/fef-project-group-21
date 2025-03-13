@@ -1,7 +1,8 @@
+/* Fly to cart animation*/
 document.addEventListener("DOMContentLoaded", function () {
   const addToCartButton = document.getElementById("add-to-cart-button");
   const productImg = document.querySelector(".productdetails-img");
-  const cartIcon = document.querySelector(".material-symbols-outlined");
+  const cartIcon = document.querySelector("#cart");
 
   addToCartButton.addEventListener("click", function () {
     let flyingImg = productImg.cloneNode(true); //*Clone Image*/
