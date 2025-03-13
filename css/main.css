@@ -46,6 +46,7 @@ ul {
   list-style: none;
   padding: 0;
   align-items: center;
+  text-wrap: nowrap;
 }
 
 #logo {
@@ -121,6 +122,24 @@ footer p {
 }
 
 /* Media Queries */
+/* Header */
+@media screen and (max-width: 520px) {
+  header ul {
+    flex-direction: column;
+    margin: 0.2rem 0;
+  }
+  nav ul li {
+    margin: 0.2rem 0;
+  }
+}
+
+/* Section Headings */
+@media screen and (max-width: 406px) {
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+
 /* Footer */
 @media screen and (max-width: 640px) {
   footer {
