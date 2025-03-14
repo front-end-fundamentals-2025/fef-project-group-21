@@ -55,17 +55,22 @@
 }
 
 .cart-name {
+  border: 1px solid black;
   margin: auto 5%;
   font-size: 1.2rem;
   font-weight: bold;
+  max-width: 157px;
 }
 
 .cart-price {
+  border: 1px solid black;
   margin: auto 5%;
 }
 
-.cart-quantity {
+.quantity-button {
+  border: 1px solid black;
   margin: auto 5%;
+  min-width: 66px;
 }
 
 .quantity-number {
@@ -90,6 +95,7 @@
   border-radius: 20px;
   width: 30%;
   margin: 10px auto;
+  min-width: 157px;
 }
 
 #complete-purchase-container {
