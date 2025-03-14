@@ -154,16 +154,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* If the cart is empty the button and box hidden*/
+/* If the cart is empty, then the button and box is hidden */
 document.addEventListener("DOMContentLoaded", () => {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   const completePurchaseButton = document.getElementById(
     "complete-purchase-button"
   );
-  const totalBox = document.getElementById(
-    "cart-total"
-  );
+  const totalBox = document.getElementById("cart-total");
 
   if (cart.length === 0) {
     completePurchaseButton.style.display = "none";
@@ -173,7 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
     totalBox.style.display = "block";
   }
 });
-/*complete purchase animation*/
+
+/* Complete purchase animation */
 document
   .getElementById("complete-purchase-button")
   .addEventListener("click", function () {
