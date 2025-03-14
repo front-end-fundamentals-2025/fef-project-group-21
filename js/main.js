@@ -5,34 +5,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartIcon = document.querySelector("#cart");
 
   addToCartButton.addEventListener("click", function () {
-    let flyingImg = productImg.cloneNode(true); //*Clone Image*/
+    let flyingImg = productImg.cloneNode(true); //* Clones image */
     flyingImg.style.position = "fixed";
     flyingImg.style.width = "100px";
     flyingImg.style.height = "100px";
-    flyingImg.style.zIndex = "1000"; /*Always before all elements*/
+    flyingImg.style.zIndex = "1000"; /*Always above other elements*/
 
-    /*Calculate the initial position of the image*/
+    /* Calculate the initial position of the image */
     let imgRect = productImg.getBoundingClientRect();
     let imgWidth = imgRect.width;
     let imgHeight = imgRect.height;
     flyingImg.style.left = imgRect.left + imgWidth / 2 - 50 + "px";
     flyingImg.style.top = imgRect.top + imgHeight / 2 - 50 + "px";
 
-    /* add to the page */
+    /* Add to the page */
     document.body.appendChild(flyingImg);
 
-    /*Calculate target location (shopping cart)*/
+    /* Calculate target location (shopping cart) */
     let cartRect = cartIcon.getBoundingClientRect();
-    /* let the image fly to the cart */
+
+    /* Let the image fly to the cart */
     flyingImg.style.transition = "all 1s ease-in-out";
 
-    /*Setting the delay*/
+    /* Setting the delay */
     setTimeout(() => {
       flyingImg.style.left = cartRect.left + "px";
       flyingImg.style.top = cartRect.top + "px";
       flyingImg.style.opacity = "0";
     }, 100);
-    /* remover the image from the page after the animation*/
+
+    /* Remover the image from the page after the animation*/
     setTimeout(() => {
       document.body.removeChild(flyingImg);
     }, 1100);
@@ -42,13 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
 /* Gets the previously stored cart or an empty cart */
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-/* add to cart localStorage */
+/* Add to cart localStorage */
 document.addEventListener("DOMContentLoaded", () => {
   const addToCartButton = document.getElementById("add-to-cart-button");
 
   addToCartButton.addEventListener("click", () => {
-    /* get the infomation of product */
+    /* Get the infomation of product */
     const productName = document.querySelector(".productname").textContent;
+
     /* Remove symbols and spaces and output number */
     const productPrice = parseFloat(
       document.querySelector(".price").textContent.replace("$", "").trim()
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  /* If cart is empty, show this text */
+  /* If cart is empty, show this text and a button */
   if (cart.length === 0) {
     cartContainer.innerHTML = `
     <p>Your cart is empty</p>
@@ -98,6 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   let total = 0;
 
+  /* Creates a new element for each cart item and calculates total cost */
   cart.forEach((item, index) => {
     const productElement = document.createElement("div");
     productElement.classList.add("cart-item");
@@ -117,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
   total += 10;
   totalPriceElement.textContent = `$${total.toFixed(2)}`;
 
+  /* Adds event listeners to the increase buttons */
   document.querySelectorAll(".increase").forEach((button) => {
     button.addEventListener("click", (e) => {
       let index = e.target.getAttribute("data-index");
@@ -126,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* Adds event listeners to the decrease buttons */
   document.querySelectorAll(".decrease").forEach((button) => {
     button.addEventListener("click", (e) => {
       let index = e.target.getAttribute("data-index");
@@ -139,6 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  /* Adds event listeners to the remove buttons */
   document.querySelectorAll(".remove-item").forEach((button) => {
     button.addEventListener("click", (e) => {
       let index = e.target.getAttribute("data-index");

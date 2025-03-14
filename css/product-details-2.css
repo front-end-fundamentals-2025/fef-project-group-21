@@ -151,42 +151,49 @@ h2 {
   height: 90%;
   border-radius: 20px;
 }
+
 .img2:hover {
   content: url("../img/clothes/detail2.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
 }
+
 .img3:hover {
   content: url("../img/clothes/detail3.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
 }
+
 .img4:hover {
   content: url("../img/clothes/detail4.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
 }
+
 .img5:hover {
   content: url("../img/clothes/detail5.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
 }
+
 .img6:hover {
   content: url("../img/clothes/detail6.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
 }
+
 .img7:hover {
   content: url("../img/clothes/detail7.jpg");
   width: 100%;
   height: 90%;
   border-radius: 20px;
 }
+
 .img8:hover {
   content: url("../img/clothes/detail8.jpg");
   width: 100%;

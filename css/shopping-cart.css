@@ -9,6 +9,7 @@
   border-radius: 1.25rem;
 }
 
+/* Back to store button */
 #back-to-store-btn {
   border: none;
   border-radius: 1.25rem;
@@ -103,6 +104,7 @@
   margin: 1.5rem 0 27rem 0;
 }
 
+/* Complete purchase button */
 #complete-purchase-button {
   margin: auto;
   border: none;
