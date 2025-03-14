@@ -154,18 +154,23 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-/* justify the complete-button*/
+/* If the cart is empty the button and box hidden*/
 document.addEventListener("DOMContentLoaded", () => {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   const completePurchaseButton = document.getElementById(
     "complete-purchase-button"
   );
+  const totalBox = document.getElementById(
+    "cart-total"
+  );
 
   if (cart.length === 0) {
     completePurchaseButton.style.display = "none";
+    totalBox.style.display = "none";
   } else {
     completePurchaseButton.style.display = "block";
+    totalBox.style.display = "block";
   }
 });
 /*complete purchase animation*/
