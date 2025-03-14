@@ -153,3 +153,47 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+/* justify the complete-button*/
+document.addEventListener("DOMContentLoaded", () => {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const completePurchaseButton = document.getElementById(
+    "complete-purchase-button"
+  );
+
+  if (cart.length === 0) {
+    completePurchaseButton.style.display = "none";
+  } else {
+    completePurchaseButton.style.display = "block";
+  }
+});
+/*complete purchase animation*/
+document
+  .getElementById("complete-purchase-button")
+  .addEventListener("click", function () {
+    const cartContainer = document.querySelectorAll(".cart-item");
+    const checkoutBox = document.getElementById("checkout-box");
+    const successMessage = document.getElementById("success-message");
+
+    cartContainer.forEach((item) => {
+      item.classList.add("collect");
+    });
+    setTimeout(() => {
+      localStorage.clear();
+      cartContainer.forEach((item) => {
+        item.style.display = "none";
+      });
+      checkoutBox.style.display = "block";
+
+      setTimeout(() => {
+        checkoutBox.style.display = "none";
+        successMessage.style.display = "block";
+
+        setTimeout(() => {
+          successMessage.style.display = "none";
+          location.reload();
+        }, 2000);
+      }, 1500);
+    }, 500);
+  });

@@ -23,6 +23,7 @@
 #back-to-store-btn:hover {
   background-color: var(--hoverGreen);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .category-total {
@@ -50,6 +51,9 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
+.cart-item:hover{
+  transform: scale(1.01);
+}
 .cart-info {
   display: flex;
   justify-content: space-around;
@@ -92,6 +96,7 @@
 .remove-item:hover {
   background-color: var(--hoverRed);
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 #cart-total {
@@ -121,6 +126,8 @@
 
 #complete-purchase-button:hover {
   background-color: var(--hoverGreen);
+  transform: scale(1.1);
+  cursor:pointer;
 }
 
 /* Media Queries */
@@ -179,4 +186,45 @@
   .cart-name {
     width: auto;
   }
+}
+/* After paid, gather all the items in the center */
+.cart-item.collect {
+  transform: scale(0.5) translateY(-50px);
+  opacity: 0;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+/*collect to box*/
+#checkout-box {
+  display: none;
+  width: 300px;
+  height: auto;
+  padding:10px;
+  background-color: var(--green);
+  box-shadow: 10px 10px 20px var(--hoverGreen);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 20px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Payment success prompt*/
+#success-message {
+  display: none;
+  position: fixed;
+  width: auto;
+  box-shadow: 10px 10px 20px var(--hoverGreen);
+  font-weight: 700;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--green);
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 20px;
 }
