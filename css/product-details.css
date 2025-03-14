@@ -64,8 +64,9 @@
 
 #add-to-cart-button:hover {
   background-color: var(--hoverGreen);
-  color: var(--white);
+  transform: scale(1.03);
   cursor: pointer;
+  color: var(--white);
 }
 
 #similar-products {

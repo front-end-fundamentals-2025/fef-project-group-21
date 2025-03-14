@@ -22,8 +22,8 @@
 
 #back-to-store-btn:hover {
   background-color: var(--hoverGreen);
+  transform: scale(1.03);
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 .category-total {
@@ -51,7 +51,7 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
-.cart-item:hover{
+.cart-item:hover {
   transform: scale(1.01);
 }
 .cart-info {
@@ -105,7 +105,8 @@
   width: 30%;
   margin: 10px auto;
   min-width: 157px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0rem 0.1rem 0.2rem 0rem var(--shadowGray),
+    0rem 0.1rem 1rem 0rem var(--shadowGray);
 }
 
 #complete-purchase-container {
@@ -126,8 +127,8 @@
 
 #complete-purchase-button:hover {
   background-color: var(--hoverGreen);
-  transform: scale(1.1);
-  cursor:pointer;
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -187,18 +188,20 @@
     width: auto;
   }
 }
+
 /* After paid, gather all the items in the center */
 .cart-item.collect {
   transform: scale(0.5) translateY(-50px);
   opacity: 0;
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
-/*collect to box*/
+
+/* Collect to box */
 #checkout-box {
   display: none;
   width: 300px;
   height: auto;
-  padding:10px;
+  padding: 10px;
   background-color: var(--green);
   box-shadow: 10px 10px 20px var(--hoverGreen);
   color: white;
@@ -211,7 +214,7 @@
   transform: translate(-50%, -50%);
 }
 
-/* Payment success prompt*/
+/* Payment success prompt */
 #success-message {
   display: none;
   position: fixed;
@@ -223,7 +226,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--green);
-  color: white;
+  color: var(--white);
   padding: 20px;
   font-size: 1.5rem;
   border-radius: 20px;
