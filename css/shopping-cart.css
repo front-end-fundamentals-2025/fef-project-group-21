@@ -51,7 +51,7 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.5);
 }
 
-.cart-item:hover{
+.cart-item:hover {
   transform: scale(1.01);
 }
 .cart-info {
@@ -127,7 +127,7 @@
 #complete-purchase-button:hover {
   background-color: var(--hoverGreen);
   transform: scale(1.1);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 /* Media Queries */
@@ -198,14 +198,14 @@
   display: none;
   width: 300px;
   height: auto;
-  padding:10px;
+  padding: 10px;
   background-color: var(--green);
   box-shadow: 10px 10px 20px var(--hoverGreen);
   color: white;
   text-align: center;
   font-size: 2rem;
   border-radius: 20px;
-  position: absolute;
+  position: fixed;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
