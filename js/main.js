@@ -1,4 +1,4 @@
-/* Fly to cart animation*/
+/* Fly to cart animation */
 document.addEventListener("DOMContentLoaded", function () {
   const addToCartButton = document.getElementById("add-to-cart-button");
   const productImg = document.querySelector(".productdetails-img");
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/* Gets the previously stored cart or an empty cart */
+/* Gets the previously stored cart or creates an empty cart */
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 /* Add to cart localStorage */
@@ -83,8 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const cartContainer = document.getElementById("cart-container");
   const totalPriceElement = document.getElementById("total-price");
-
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   /* If cart is empty, show this text and a button */
   if (cart.length === 0) {

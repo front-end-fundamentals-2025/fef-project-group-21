@@ -29,40 +29,6 @@
   margin: 0.2rem 0;
 }
 
-/*Media Queries*/
-@media screen and (max-width: 1300px) {
-  .products-gallery {
-    margin: 0 auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .products-gallery {
-    margin: 0 auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .products-gallery {
-    margin: 0 auto;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    gap: 20px;
-  }
-}
-
 .img1:hover {
   content: url("../img/clothes/exhibit1.jpg");
 }
@@ -109,4 +75,38 @@
 
 .img12:hover {
   content: url("../img/clothes/exhibit12.jpg");
+}
+
+/*Media Queries*/
+@media screen and (max-width: 1300px) {
+  .products-gallery {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .products-gallery {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .products-gallery {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 20px;
+  }
 }
