@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-main {
-  height: 82vh;
-}
-
 #cart-container {
   text-align: center;
   width: 80%;
@@ -61,7 +57,7 @@ main {
 .cart-name {
   margin: auto 5%;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .cart-price {
@@ -98,7 +94,7 @@ main {
 
 #complete-purchase-container {
   display: flex;
-  margin: 1.5rem 0 2rem 0;
+  margin: 1.5rem 0 27rem 0;
 }
 
 #complete-purchase-button {

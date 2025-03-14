@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
     cartContainer.appendChild(productElement);
     total += item.price * item.quantity;
   });
-  total += 20;
+  total += 10;
   totalPriceElement.textContent = `$${total.toFixed(2)}`;
 
   document.querySelectorAll(".increase").forEach((button) => {
